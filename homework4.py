@@ -3,7 +3,7 @@ def fun(x):
         return x**2
     else:
         return 4
-element=input('Введите число')
+element=input('Введите число:')
 result=fun(float(element))
 print('результат:',result)
 

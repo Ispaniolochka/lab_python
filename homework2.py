@@ -1,6 +1,6 @@
 def number(x,y):
-    if x>=7:
+    if x>=y:
         return x
-    elif y>=7:
+    else:
         return y
-print(number(5,9))
+print(number(9,5))
