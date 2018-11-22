@@ -7,6 +7,4 @@ def value(x):
 element=input('Введите число:')
 result=value(float(element))
 print('результат:',result)
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+
