@@ -1,3 +1,10 @@
+'''Напишите программу,которая по коду города и длительности разговоров вычисляет
+их стоимость и выводит результат на экран:
+Екатеринбург - код 343, 15 руб/мин
+Омск - код 381, 18 руб/мин
+Воронеж - код 473, 13 руб/мин
+Ярославль - код 485, 11 руб/мин'''
+
 def getcost(code,time):
     if code == 343:
         return 15 * time
@@ -18,11 +25,11 @@ def getcity(code):
     elif code == 485:
         return 'Ярославль'
     
-citycode = input('Введите код города:')
+citycode = input('Введите код города:')   '''Переводим строку в число'''
 if len(citycode)>0:
     duration = input('Введите количество минут разговора:')
     city = getcity(int(citycode))
-    result = getcost(int(citycode),int(duration))
+    result = getcost(int(citycode),int(duration)) '''int - переводим в целое число'''
     print('Город ',city,'.Стоимость разговора:',result,'рублей')
 else:
     print('Вы не ввели код!')
