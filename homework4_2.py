@@ -9,7 +9,4 @@ else:
 x = len(s)
 if x > 4:
     print('4.',s.lower())
-s.replace(str(0),'O')       
-print('5.',s.replace(str(0),'O'))
-
-              
+print('5.','O' + s[1:])             
