@@ -1,7 +1,7 @@
 s = "Крутой фильм"
-x = len(s)
-def fun(x,n):
-    if x > n:
+s = len(s)
+def fun(s,n):
+    if s > n:
         print(s.upper())
     else:
         print(s)
