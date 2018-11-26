@@ -8,7 +8,8 @@ lst = ''.join(lst)
 print(lst)
 user_words = input('Введите букву:')
 if user_words == word[letter_number]:
-    input('Победа!')
+    print('Победа!')
+    print('Слово:',word)
 else:
-    input('Увы! Попробуйте в другой раз.')
+    print('Увы! Попробуйте в другой раз.')
     
