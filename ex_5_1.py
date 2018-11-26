@@ -1,14 +1,13 @@
 import random
 words = ['самовар','весна','лето']
 word = random.choice(words)
-print(word)
-random.choice(word)
+letter_number = random.randint(0,len(word)-1)
 lst = list(word)
-lst[2] = '?'
+lst[letter_number] = '?'
 lst = ''.join(lst)
 print(lst)
 user_words = input('Введите букву:')
-if user_words == word[2]:
+if user_words == word[letter_number]:
     input('Победа!')
 else:
     input('Увы! Попробуйте в другой раз.')
