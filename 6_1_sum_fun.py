@@ -7,5 +7,5 @@ def y(x):
 total = 0
 for i in range(10,31,2):
     total = total + y(i)
-    print(total)
+print(total)
     
