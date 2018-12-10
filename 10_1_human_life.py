@@ -18,29 +18,35 @@ class Human:
         
 
     def working(self):
-        if 18 <= self._age <= 65:
-            return self.working
+        if 18 >= self._age:
+            print(self.name,'еще не работает.')
+        elif self._age >= 65:
+            print(self.name,'на пенсии.')
         else:
-            print(self.name,'не работает.')
+            print(self.name,'работает.')
         
         
     def relaxing(self):
         print(self.name,'отдыхает.')
+
+    def get_age(self):
+        return self._age
         
-    def age(self):
+    def age_plus(self):
         self._age += 1
               
 
 class Life:
     def life(self, human, years=70):
-        while years:            
-            human.age()
+        while years:
+            human.age_plus()
+            print('Возраст',human.get_age())
             human.eating()
             human.sleeping()
             human.working()
             human.relaxing()
             years -= 1
-            print(years)
+            print('')
 
 
 petr = Human('Петр')
