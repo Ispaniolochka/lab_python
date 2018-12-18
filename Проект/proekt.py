@@ -23,6 +23,8 @@ def click_1():
     task['категория'] = entry_2.get()
     task['время'] = entry_3.get()
     task_list.append(task)
+    course_writer.writer('task_list.json',task_list)
+    print('Задачи сохранены в файл!')
         
 def click_2():
     pprint(task_list)
@@ -58,7 +60,7 @@ button_1.place(x=180,y=120)
 button_2 = tkinter.Button(window, text='Вывести список задач',command=click_2) 
 button_2.place(x=180,y=150)
 
-button_3 = tkinter.Button(window, text='Выход',command=click_3) 
+button_3 = tkinter.Button(window, text='Выход',command=window.destroy) 
 button_3.place(x=180,y=180)
 
 
