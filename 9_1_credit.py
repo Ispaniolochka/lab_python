@@ -14,6 +14,8 @@ def dict_credit_region(what, when):
             for row in credit_reader:
                 if row[0] == what:
                     where = row[1]
+                    if where == 'Россия':
+                        continue
                     lst = row[2].split('-')                    
                     if lst[0] == when:
                         new_credit_count = int(row[3])

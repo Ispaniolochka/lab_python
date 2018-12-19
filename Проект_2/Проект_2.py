@@ -35,7 +35,9 @@ def click_1():
     print_window('Задачи сохранены в файл!')
     
 def click_2():
-    print_window(task_list)
+    for task in task_list:
+        task_str = 'Задача: ' + task['задача'] + '\nКатегория: ' + task['категория'] + '\nВремя: ' +  task['время'] + '\n'
+        print_window(task_str)
 
     
 def click_3():

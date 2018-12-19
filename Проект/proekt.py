@@ -20,8 +20,11 @@ canvas.pack()
 def click_1():
     task = {'задача': '','категория': '','время': ''}
     task['задача'] = entry_1.get()
+    entry_1.delete(0, 'end')
     task['категория'] = entry_2.get()
+    entry_2.delete(0, 'end')
     task['время'] = entry_3.get()
+    entry_3.delete(0, 'end')
     task_list.append(task)
     course_writer.writer('task_list.json',task_list)
     print('Задачи сохранены в файл!')
